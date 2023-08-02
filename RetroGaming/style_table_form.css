@@ -1,0 +1,77 @@
+main.gridArea{
+display: grid;
+grid-gap: 40px;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+article img{
+display: block;
+margin: auto;
+}
+
+article table{
+margin: auto;
+background-size: 120px 120px;
+}
+
+tfoot td{
+text-align: center;
+background-size: 120px 120px;
+}
+
+article caption{
+font-weight: bold;
+}
+
+#layout{
+  background-color: lightgray;
+}
+
+main{
+background-color: lightgray;
+}
+
+
+article{
+  background-color: white;
+  border: 5px double blue;
+  border-radius: 50px;
+}
+
+
+/*styles for contact form*/
+fieldset{
+  background-color: #ffcc99;
+  border-color: #C50013;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+fieldset span{
+  color: red;
+}
+
+.formRow div{
+  display: flex;
+  flex-flow: wrap;
+  margin: 7px 7px 7px 7px;
+}
+
+#name, #email, #subject{
+  width: 250px;
+}
+
+#phone{
+  width: 150px;
+}
+
+#question{
+  width: 95%;
+  max-width: 450px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.blockLabel{
+  display: block;
+}

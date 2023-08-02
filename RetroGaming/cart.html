@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- lang attribute -->
+
+<head>
+  <meta charset="UTF-8"> <!-- character encoding declaration -->
+  <meta name="author" content="Amy O">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Gaming & More</title> <!-- title of webpage -->
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="layout_style.css">
+  <link rel="stylesheet" type="text/css" href="navicon.css">
+  <script type="text/javascript" src="arrays.js" defer></script>
+  <script type="text/javascript" src="cart.js" defer></script>
+  <style>
+    div#cart table {
+      font-size: 1.4em;
+      border-collapse: collapse;
+      line-height: 1.3em;
+    }
+
+    div#cart table tr:nth-of-type(even) {
+      background-color: lightgray;
+    }
+
+    /*select the 2, 3 and 4th columns in the table,
+aligns text in colums to right*/
+
+    div#cart table tr td:nth-of-type(2) {
+      text-align: right;
+    }
+
+    div#cart table tr td:nth-of-type(3) {
+      text-align: right;
+    }
+
+    div#cart tr td:nth-of-type(4) {
+      text-align: right;
+    }
+
+    div#cart table th{
+      background-color: #C50013;
+      color: rgb(231, 231, 231);
+      padding: 10px;
+    }
+
+    div#cart table th {
+      background-color: #C50013;
+      color: rgb(231, 231, 231);
+      padding: 10px;
+    }
+
+    div#cart table td{
+      padding: 10px 10px 10px 10px;
+    }
+
+    div#cart tfoot tr:first-of-type {
+      border-top: 6px double #C50013;
+    }
+
+    div#cart tfoot tr td {
+      background-color: white;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="layout">
+    <!-- change color to primary or secondary color-->
+    <div style="background-color: #C50013">
+      <header>
+        <h1>Retro Gaming &amp; More</h1>
+      </header> <!-- end header -->
+      <h4><i> Retro gaming starts here!</i></h4>
+    </div>
+    <nav>
+      <a id="navicon" href="#"><img src="navicon.png" width="32px" /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>
+        Your #1 stop for all things retro gaming!
+      </h2>
+    </section>
+    <main>
+      <h3>Shopping Cart</h3>
+      <div id="cart"></div>
+      <button>Proceed to Checkout</button>
+      <p id="sdate"></p>
+    </main>
+
+    <footer>
+      &copy;2020 by Amy Onwudinanti
+    </footer>
+  </div>
+</body>
+
+</html>

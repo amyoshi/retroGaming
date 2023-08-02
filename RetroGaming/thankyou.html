@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- lang attribute -->
+
+  <head>
+  <meta charset="UTF-8"> <!-- character encoding declaration -->
+  <meta name="author" content="Amy O">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title> <!-- title of webpage -->
+<link rel="stylesheet" type="text/css" href="base.css">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="stylesheet" type="text/css" href="layout_style.css">
+<link rel="stylesheet" type="text/css" href="navicon.css">
+<script type="text/javascript">
+  window.onload = function(e){
+    var parseUrl = new URL (window.location.href);
+    var pname = parseUrl.searchParams.get("name");
+    document.getElementById("name").innerHTML = pname;
+
+    var parseUrl = new URL (window.location.href);
+    var subject = parseUrl.searchParams.get("subject");
+    document.getElementById("subject").innerHTML = subject;
+
+    var parseUrl = new URL (window.location.href);
+    var email = parseUrl.searchParams.get("email");
+    document.getElementById("email").innerHTML = email;
+
+    if(pname.value.length < 0){
+      window.location.href = "contact.html";
+    }
+  }
+</script>
+</head>
+<meta content="width=device-width" name="viewport">
+<body>
+<div id="layout">
+  <!-- change color to primary or secondary color-->
+  <div style="background-color: #C50013">
+  <header>
+      <h1>Retro Gaming &amp; More</h1>
+  </header>
+  <h4><i> Retro gaming starts here!</i></h4>
+  </div>
+  <nav>
+    <a id="navicon" href="#"><img src="navicon.png" width="32px" /></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+  <section>
+      <h2> Thank You! </h2>
+  </section>
+    <main>
+      <p id="name"></p>
+      <p>We have received your request for additional information on:</p>
+      <ul><li id="subject"></li></ul>
+      <p>We will respond <span id="email"></span> within two business days.</p>
+      <p>Thank you!</p>
+    </main>
+    <footer>
+    &copy;2020 by Amy Onwudinanti
+    </footer>
+  </div>
+  </body>
+</html>
